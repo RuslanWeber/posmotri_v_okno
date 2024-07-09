@@ -66,7 +66,7 @@ button {
 }
 
 .content {
-  width: 1140px;
+  width: 1143px;
   height: 534px;
   display: flex;
   justify-content: space-between;
@@ -178,7 +178,7 @@ button {
 .search-form__label {
   margin-top: 5px;
   display: inline-flex;
-  align-items: baseline;
+  align-items: flex-start;
   column-gap: 5px;
   cursor: pointer;
 }
@@ -245,7 +245,7 @@ button {
 
 .content__card-link {
   display: block;
-  margin: 2px 2px 30px 2px;
+  margin-bottom: 30px;
   color: var(--color-white);
   text-decoration: underline 1px transparent;
   text-underline-offset: 6px;
@@ -276,12 +276,11 @@ button {
 }
 
 .content__video-card {
-  height: 13.5vh;
   display: flex;
   justify-content: space-between;
   border: 1px solid transparent;
   padding: 2px;
-  
+  min-width: 397px;
 }
 
 .content__video-card-description-container {
@@ -296,7 +295,7 @@ button {
   font-family: Oswald, Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 37px;
 }
 
 .content__video-card-description {
@@ -309,8 +308,9 @@ button {
 }
 
 .content__video-card-thumbnail {
-  width: 49.87%;
-  height: 100%;
+  width: 194px;
+  height: 103px;
+  flex-shrink: 0;
   object-fit: cover;
   object-position: center;
 }
